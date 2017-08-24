@@ -143,3 +143,22 @@ position: fixed;
 	width:100%;
 
 }
+
+.inputBox{
+
+	font-size:16px;
+	height: 40px;
+}
+
+#txtAreaMssg{
+	line-height: 20px;
+}
+
+#btnSubmit{
+	background-color: #4aaaa5;
+	color: white;
+	width: 120px;
+	height: 50px;
+	font-size: 25px;
+
+}		
