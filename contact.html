@@ -2,56 +2,61 @@
 <html lang="en-us">
 <head>
 <meta charset="UTF-8"></meta>
-<title>Informational Biography for William F. Kassebaum</title>	
-<link rel="stylesheet" href="assets/css/style.css">
+<title>Contact William F. Kassebaum</title>	
+	<link rel="stylesheet" href="assets/css/reset.css">
+	<link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-<header class="header">
- 	<div id="logo">
- 		<h3 class="serifClass">William F. Kassebaum</h1>
- 	</div>
- 	<div class="hdrObjects"  id="about">
- 		About
- 	</div>
- 	<div class="hdrObjects"  id="portfolio">
- 		Portfolio
- 	</div>
- 	<div class="hdrObjects"  id="contact">
- 		Contact
- 	</div>
+<header id="mainHead">
+	<div class="container">
+		<a href="contact.html" id="mainLogo">Contact</a>
+			<nav>
+				<a href="index.html">About Me</a>
+				<a href="portfolio.html">Portfolio</a>
+				<a href="contact.html">Contact</a>
+			</nav>
+	</div>
 </header>
-<div class="aboutMe">
+<div id="main-container" class="contact">
+	<section class="main-section">
 
-	<div class="tmpClass"  id="aboutMeInfo">
-		<h1 class="serifClass aboutMeClass" >Contact</h1>
-		<hr>
-		<table border="0">
-			<tr><td>Name</td></tr>
-			<tr><td><input type="text" class="inputBox" id="txtName" placeholder="John Smith"></input></td></tr>
-			<tr><td>Email</td></tr>
-			<tr><td><input type="text" class="inputBox" id="txtEmail"  placeholder="example@gmail.com"></input></td></tr>
-			<tr><td>Message</td></tr>
-			<tr><td><textarea class="inputBox" id="txtAreaMssg"  rows="4" cols="50"></textarea></td></tr>
-			<tr><td><input type="submit" value="Submit" id="btnSubmit"></input></td></tr>
-		</table>
-	</div>
+		<h1>Contact</h1>
 
-	<div id="aboutMeContacts">
-		<h2 class="serifClass aboutMeClass">Connect with me</h2>
-		<hr>
-		<a href="https://github.com/wfkinnc" target="_blank"><img src="assets/images/if_github2_252065.png" width="20%" height="30%"></a>
-		<a href="https://www.linkedin.com/in/william-kassebaum-5907232/" target="_blank"><img src="assets/images/if_linkedin_1896062.png" width="20%" height="30%"></a>
-		<a href="https://stackoverflow.com/users/story/8465340" target="_blank"><img src="assets/images/stackoverflowpx.png" width="20%" height="30%"></a>
+		<form id="contact-form">
+			<ul>
+				<li>
+					<label form="name">Name</label>
+					<input type="text" name="name" id="txtName" placeholder="John Smith" required="required"></input>
+				</li>
+				<li>
+					<label form="email">Email</label>
+					<input type="text" name="email" id="txtEmail"  placeholder="example@gmail.com" required="required"></input>
+				</li>
+				<li>
+					<label form="message">Message</label>
+					<textarea name="message" id="txtAreaMssg"  required="required"></textarea>
+				</li>
+			</ul>
+					<input type="submit" value="Submit" name="submit"></input>
 
 
-	</div>
+		</form>
+
+	</section>
+
+	<section class="sidebar">
+		<h2>Connect with me</h2>
+				<a href="https://github.com/wfkinnc" target="_blank" ><img src="assets/images/if_github2_252065.png" alt="Github" class="socialImg"></a>
+			<a href="https://www.linkedin.com/in/william-kassebaum-5907232/" target="_blank" ><img src="assets/images/if_linkedin_1896062.png" alt="LinkedIn" class="socialImg"></a>
+			<a href="https://stackoverflow.com/users/story/8465340" target="_blank" ><img src="assets/images/stackoverflowpx.png" alt="Stack Overflow" class="socialImg"></a>
+
+	</section>
 </div>
 
-<div id="smallBorder">
-</div>
-
-<footer class="footing">
+<footer>
+	<div class="container">
 	© Copyright 2017 William F. Kassebaum
+	</div>
 </footer>
 </body>
 </html>
